@@ -12,7 +12,7 @@
         <classes>
 
             <class name="test.LoginTest"></class>
-
+            <class name="test.AdminTest.UserTest"></class>
 
 
         </classes>

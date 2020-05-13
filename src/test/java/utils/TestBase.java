@@ -1,6 +1,5 @@
 package utils;
 
-import com.pages.LoginPage;
 import org.apache.log4j.Logger;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -31,17 +30,7 @@ public class TestBase {
             e.printStackTrace();
         }
         LOGGER.info("Browser Initiated");
-
-        LoginPage.setUserName("Admin");
-        LoginPage.setPass("admin123");
-        LoginPage.ClickLogin();
-        LOGGER.info("Hrm Login");
     }
-    @BeforeMethod(alwaysRun = true)
-    public void Login() {
-        softAssert = new SoftAssert();
-    }
-
     //ajxhusduhdusssssssssssssssss
     @BeforeMethod(alwaysRun = true)
     public void beforeMethod() {
@@ -56,15 +45,11 @@ public class TestBase {
     //ajxhusduhdusssssssssssssssss
     @AfterMethod(alwaysRun = true)
     public void closeBrowser() {
-
-      //  LoginPage.Clickwelcom();
-        //LoginPage.waittime();
-       // LoginPage.ClickLogout();
-
-        //LOGGER.info("Closing Browser");
-        //PageBase.closeDriver();
-       // LOGGER.info("Browser Closed");
+        LOGGER.info("Closing Browser");
+       PageBase.closeDriver();
+        LOGGER.info("Browser Closed");
     }
+    //ajxhusduhdusssssssssssssssss
     @AfterMethod(alwaysRun = true)
     public void afterMethod(Method method, ITestResult result) {
         LOGGER.info("Executed test case name:" + method.getName() + " Execution Results : " + result.toString());
