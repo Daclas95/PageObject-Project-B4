@@ -57,15 +57,14 @@ public class TestBase {
     @AfterMethod(alwaysRun = true)
     public void closeBrowser() {
 
-        LoginPage.Clickwelcom();
-        LoginPage.waittime();
-        LoginPage.ClickLogout();
+      //  LoginPage.Clickwelcom();
+        //LoginPage.waittime();
+       // LoginPage.ClickLogout();
 
-        LOGGER.info("Closing Browser");
-        PageBase.closeDriver();
-        LOGGER.info("Browser Closed");
+        //LOGGER.info("Closing Browser");
+        //PageBase.closeDriver();
+       // LOGGER.info("Browser Closed");
     }
-    //ajxhusduhdusssssssssssssssss
     @AfterMethod(alwaysRun = true)
     public void afterMethod(Method method, ITestResult result) {
         LOGGER.info("Executed test case name:" + method.getName() + " Execution Results : " + result.toString());
