@@ -17,6 +17,7 @@ public class UserTest extends TestBase {
     public void UserTest(){
         PageLogin.login();
 
+// login page
         User.wait(20);
         User.clickAdmin();
         User.wait(5);
@@ -24,14 +25,38 @@ public class UserTest extends TestBase {
         User.wait(5);
         User.clickUser();
 
+// admin page
         User.wait(20);
         User.setTxtUsername("vinthusha");
         User.wait(5);
-        User.setUserRole("");
+        User.setUserRole("1");
         User.wait(5);
         User.setTxtEmployeeName("Mathu");
         User.wait(5);
         User.setStatus();
+        User.wait(5);
+        User.setStatus();
+        User.wait(5);
+        User.clickReset();
+        User.wait(5);
+        User.clickAdd();
 
+// User page add
+        User.clickUserRole("0");
+        User.wait(5);
+        User.setEmpName("Steven Edwards");
+        User.wait(5);
+        User.clickStatus();
+        User.wait(5);
+        User.setUname("vinthusha");
+        User.wait(5);
+        User.setTxtPassword("jhvdjgvdh@");
+        User.wait(5);
+        User.setTxtConPassword("jhvdjgvdh@");
+        User.wait(5);
+        User.clickSave();
+
+  // User page delete
+     //   User.clickDelete();
     }
 }
