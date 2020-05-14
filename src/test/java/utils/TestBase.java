@@ -1,6 +1,8 @@
 package utils;
 
-import com.pages.LoginPage;
+import com.pages.admin.LoginPage;
+import com.pages.admin.HrmJob;
+
 import org.apache.log4j.Logger;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -36,6 +38,8 @@ public class TestBase {
         LoginPage.setPass("admin123");
         LoginPage.ClickLogin();
         LOGGER.info("Hrm Login");
+        HrmJob.clickAdminPanel();
+        HrmJob.clickJobTab();
     }
     @BeforeMethod(alwaysRun = true)
     public void Login() {

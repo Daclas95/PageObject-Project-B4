@@ -18,8 +18,8 @@ public class LoginTest extends TestBase {
 
 
                                 //*
-        HrmJob.clickAdminPanel();
-        HrmJob.clickJobTab();
+        /*HrmJob.clickAdminPanel();
+        HrmJob.clickJobTab();*/
         //AdminPage.implicitWait(3000);
         HrmJob.clickJobTitles();
         HrmJob.clickButAdd();

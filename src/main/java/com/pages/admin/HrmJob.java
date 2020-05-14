@@ -10,7 +10,7 @@ public class HrmJob extends PageBase {
     private static By HrmHeadAdmin = By.id("menu_admin_viewAdminModule");
     private static By HrmJobDroDown = By.id("menu_admin_Job");
     private static By MenuJopTitles = By.id("menu_admin_viewJobTitleList");
-   private static By MenuPayGrades = By.id("menu_admin_viewPayGrades");
+   //private static By MenuPayGrades = By.id("menu_admin_viewPayGrades");
     private static By MenuEmplStatus = By.id("menu_admin_employmentStatus");
     private static By MenuJobCatogory = By.id("menu_admin_jobCategory");
     private static By MenuWorkShift = By.id("menu_admin_workShift");
