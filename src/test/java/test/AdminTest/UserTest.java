@@ -32,6 +32,23 @@ public class UserTest extends TestBase {
         User.setTxtEmployeeName("Mathu");
         User.wait(5);
         User.setStatus();
+        User.wait(5);
+        User.setStatus();
+        User.wait(5);
+        User.clickReset();
+        User.wait(5);
+        User.clickAdd();
 
+        User.clickUserRole();
+        User.wait(5);
+        User.setEmpName("Vinthu");
+        User.wait(5);
+        User.clickStatus();
+        User.wait(5);
+        User.setUname("Logetha");
+        User.wait(5);
+        User.setTxtPassword("jhvdjgvdh");
+        User.wait(5);
+        User.clickSave();
     }
 }
