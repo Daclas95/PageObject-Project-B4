@@ -1,22 +1,20 @@
 package test;
 
-import com.pages.DashboardPage;
-import com.pages.admin.HrmJob;
+import com.pages.AdminPage;
+import com.pages.LoginPage;
 import org.testng.annotations.Test;
 
-import org.testng.asserts.SoftAssert;
 import utils.TestBase;
 
 public class LoginTest extends TestBase {
 
     @Test
-    public void LoginTest(){
-        softAssert = new SoftAssert();
-        softAssert.assertTrue(DashboardPage.isHrmDashboardPageDisplayed(),"Hrm Dashboard Page Not Display") ;
-        softAssert.assertAll();
-//*         To Add job detials
 
+    public  void loginTest() throws InterruptedException {
+        // softAssert = new SoftAssert();
+        // softAssert.assertTrue(LoginPage.isHrmLoginPageDisplayed(),"HrmLogin Page Not Display") ;
 
+<<<<<<< HEAD
                                 //*
         /*HrmJob.clickAdminPanel();
         HrmJob.clickJobTab();*/
@@ -28,14 +26,18 @@ public class LoginTest extends TestBase {
         HrmJob.chooseJobSpeci("Desktop/New Text Document.txt");
         HrmJob.setNote("Noted their wrk");
         HrmJob.clickJobSave();
+=======
+        // Login Panel Test
+>>>>>>> 0d035bc786d8f33a3d5a29f81eac5f6db57d4d41
 
-        //* To DELETE JOB DETAILS
 
-    HrmJob.clickJobCheckBox();
-    HrmJob.clickDelBut();
-    HrmJob.clickDeletConfirm();
 
+        // AdminPage.isAdminPageHeaderDisplayed();
+        // softAssert.assertAll();
+        // Company General Information Test
+        
 
 
     }
+
 }

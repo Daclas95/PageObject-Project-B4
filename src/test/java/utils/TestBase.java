@@ -23,20 +23,35 @@ public class TestBase {
     public void beforeTest() {
         System.out.println("Test Running " + this.getClass().toString());
     }
+
 //ajxhusduhdusssssssssssssssss
+
     @BeforeMethod(alwaysRun = true)
-    public void loadBrowser() {
+
+    public void loadBrowser() throws InterruptedException {
         LOGGER.info("Initiate Browser");
-        try {
+
+        try
+        {
             PageBase.initiateDriver();
-        } catch (MalformedURLException e) {
+        }
+
+        catch (MalformedURLException e)
+        {
             e.printStackTrace();
         }
+
         LOGGER.info("Browser Initiated");
+<<<<<<< HEAD
+        LoginPage.setUserName("Admin");
+        LoginPage.setPass("admin123");
+        LoginPage.ClickLogin();
+=======
 
         LoginPage.setUserName("Admin");
         LoginPage.setPass("admin123");
         LoginPage.ClickLogin();
+<<<<<<< HEAD
         LOGGER.info("Hrm Login");
         HrmJob.clickAdminPanel();
         HrmJob.clickJobTab();
@@ -44,33 +59,43 @@ public class TestBase {
     @BeforeMethod(alwaysRun = true)
     public void Login() {
         softAssert = new SoftAssert();
+=======
+
+>>>>>>> c5e26ea64a2a32573a80b8b84623be299b372777
+>>>>>>> 0d035bc786d8f33a3d5a29f81eac5f6db57d4d41
     }
 
     //ajxhusduhdusssssssssssssssss
+
     @BeforeMethod(alwaysRun = true)
-    public void beforeMethod() {
+    public void beforeMethod()
+    {
         softAssert = new SoftAssert();
     }
 
     @BeforeMethod(alwaysRun = true)
-    public void nameBefore(Method method) {
+
+    public void nameBefore(Method method)
+    {
         LOGGER.info("Test name: " + method.getName());
     }
 
     //ajxhusduhdusssssssssssssssss
+
     @AfterMethod(alwaysRun = true)
-    public void closeBrowser() {
 
-      //  LoginPage.Clickwelcom();
-        //LoginPage.waittime();
-       // LoginPage.ClickLogout();
-
-        //LOGGER.info("Closing Browser");
-        //PageBase.closeDriver();
-       // LOGGER.info("Browser Closed");
+    public void closeBrowser()
+    {
+        LOGGER.info("Closing Browser");
+        PageBase.closeDriver();
+        LOGGER.info("Browser Closed");
     }
+    //ajxhusduhdusssssssssssssssss
+
     @AfterMethod(alwaysRun = true)
-    public void afterMethod(Method method, ITestResult result) {
+
+    public void afterMethod(Method method, ITestResult result)
+    {
         LOGGER.info("Executed test case name:" + method.getName() + " Execution Results : " + result.toString());
     }
 }
