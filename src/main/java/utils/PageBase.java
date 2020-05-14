@@ -82,8 +82,8 @@ public class PageBase {
     /**
      * Close web driver instances
      */
-   public static void closeDriver() {
-      // getDriver().quit();
+    public static void closeDriver() {
+        getDriver().quit();
         staticWait(1);
     }
 

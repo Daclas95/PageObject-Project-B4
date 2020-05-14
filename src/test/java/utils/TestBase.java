@@ -1,5 +1,6 @@
 package utils;
 
+import com.pages.LoginPage;
 import org.apache.log4j.Logger;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -20,38 +21,63 @@ public class TestBase {
     public void beforeTest() {
         System.out.println("Test Running " + this.getClass().toString());
     }
+
 //ajxhusduhdusssssssssssssssss
+
     @BeforeMethod(alwaysRun = true)
-    public void loadBrowser() {
+
+    public void loadBrowser() throws InterruptedException {
         LOGGER.info("Initiate Browser");
-        try {
+
+        try
+        {
             PageBase.initiateDriver();
-        } catch (MalformedURLException e) {
+        }
+
+        catch (MalformedURLException e)
+        {
             e.printStackTrace();
         }
+
         LOGGER.info("Browser Initiated");
+
+        LoginPage.setUserName("Admin");
+        LoginPage.setPass("admin123");
+        LoginPage.ClickLogin();
+
     }
+
     //ajxhusduhdusssssssssssssssss
+
     @BeforeMethod(alwaysRun = true)
-    public void beforeMethod() {
+    public void beforeMethod()
+    {
         softAssert = new SoftAssert();
     }
 
     @BeforeMethod(alwaysRun = true)
-    public void nameBefore(Method method) {
+
+    public void nameBefore(Method method)
+    {
         LOGGER.info("Test name: " + method.getName());
     }
 
     //ajxhusduhdusssssssssssssssss
+
     @AfterMethod(alwaysRun = true)
-    public void closeBrowser() {
+
+    public void closeBrowser()
+    {
         LOGGER.info("Closing Browser");
-     //  PageBase.closeDriver();
+        PageBase.closeDriver();
         LOGGER.info("Browser Closed");
     }
     //ajxhusduhdusssssssssssssssss
+
     @AfterMethod(alwaysRun = true)
-    public void afterMethod(Method method, ITestResult result) {
+
+    public void afterMethod(Method method, ITestResult result)
+    {
         LOGGER.info("Executed test case name:" + method.getName() + " Execution Results : " + result.toString());
     }
 }

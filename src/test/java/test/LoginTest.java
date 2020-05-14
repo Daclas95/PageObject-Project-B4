@@ -1,24 +1,29 @@
 package test;
 
-import com.pages.DashboardPage;
+import com.pages.AdminPage;
 import com.pages.LoginPage;
 import org.testng.annotations.Test;
 
-import org.testng.asserts.SoftAssert;
-import utils.PageBase;
 import utils.TestBase;
 
 public class LoginTest extends TestBase {
 
-    @Test(priority = 1)
-    public void LoginTest() {
-        softAssert = new SoftAssert();
-        softAssert.assertTrue(LoginPage.isHrmLoginPageDisplayed(), "HrmLogin Page Not Display");
-        LoginPage.setUserName("Admin");
-        LoginPage.setPass("admin123");
-        LoginPage.ClickLogin();
-        softAssert.assertTrue(DashboardPage.isHrmDashboardPageDisplayed(), "Hrm Dashboard Page Not Display");
-        softAssert.assertAll();
+    @Test
+
+    public  void loginTest() throws InterruptedException {
+        // softAssert = new SoftAssert();
+        // softAssert.assertTrue(LoginPage.isHrmLoginPageDisplayed(),"HrmLogin Page Not Display") ;
+
+        // Login Panel Test
+
+
+
+        // AdminPage.isAdminPageHeaderDisplayed();
+        // softAssert.assertAll();
+        // Company General Information Test
+        
+
 
     }
+
 }
