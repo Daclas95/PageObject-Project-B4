@@ -5,8 +5,10 @@ import utils.PageBase;
 
 import java.util.logging.Logger;
 
+import static utils.PageBase.getDriver;
 
-public class LoginPage extends PageBase {
+
+public class LoginPage {
     private static final Logger LOGGER = Logger.getLogger(String.valueOf(LoginPage.class));
     private static By TxtUsername= By.id("txtUsername");
     private static By TxtPassworld= By.id("txtPassword");
