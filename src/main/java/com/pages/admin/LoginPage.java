@@ -50,4 +50,11 @@ public class LoginPage extends PageBase {
             LOGGER.info("Clicked Welcome");
 
         }
+
+        public static void login(String user,String pw){
+            LoginPage.setUserName(user);
+            LoginPage.setPass(pw);
+            LoginPage.ClickLogin();
+
+        }
     }

@@ -27,7 +27,7 @@ public class LoginTest extends TestBase {
         softAssert.assertTrue(DashboardPage.isHrmDashboardPageDisplayed(), "Hrm Dashboard Page Not Display");
         softAssert.assertAll();
     }
-     @Test
+     @Test(priority = 2)
         public void HrmTest () {
             softAssert = new SoftAssert();
 

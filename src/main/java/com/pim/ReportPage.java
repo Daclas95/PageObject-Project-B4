@@ -2,8 +2,6 @@ package com.pim;
 
 import java.util.logging.Logger;
 import org.openqa.selenium.By;
-import com.admin.User;
-import com.pages.LoginPage;
 import utils.PageBase;
 
 public class ReportPage extends PageBase{

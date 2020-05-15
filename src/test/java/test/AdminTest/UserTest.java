@@ -1,12 +1,8 @@
 package test.AdminTest;
 
-import com.admin.User;
-import com.pages.DashboardPage;
 import com.pages.LoginPage;
+import com.pages.admin.HrmJob;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
-import test.LoginTest;
-import test.PageLogin;
 import utils.TestBase;
 
 public class UserTest extends TestBase {
@@ -15,23 +11,23 @@ public class UserTest extends TestBase {
 
     @Test(priority = 1)
     public void UserTest(){
-        PageLogin.login();
 
-        User.wait(20);
-        User.clickAdmin();
-        User.wait(5);
-        User.clickUserManagement();
-        User.wait(5);
-        User.clickUser();
 
-        User.wait(20);
-        User.setTxtUsername("vinthusha");
-        User.wait(5);
-        User.setUserRole("");
-        User.wait(5);
-        User.setTxtEmployeeName("Mathu");
-        User.wait(5);
-        User.setStatus();
+        HrmJob.User.wait(20);
+        HrmJob.User.clickAdmin();
+        HrmJob.User.wait(5);
+        HrmJob.User.clickUserManagement();
+        HrmJob.User.wait(5);
+        HrmJob.User.clickUser();
+
+        HrmJob.User.wait(20);
+        HrmJob.User.setTxtUsername("vinthusha");
+        HrmJob.User.wait(5);
+        HrmJob.User.setUserRole("");
+        HrmJob.User.wait(5);
+        HrmJob.User.setTxtEmployeeName("Mathu");
+        HrmJob.User.wait(5);
+        HrmJob.User.setStatus();
 
     }
 }

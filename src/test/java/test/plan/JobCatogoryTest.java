@@ -16,7 +16,7 @@ public class JobCatogoryTest extends TestBase {
 
         JobCatogoryPage.clickMenuJobcatogory();
         JobCatogoryPage.clickJobcatogoryAdd();
-        JobCatogoryPage.setTxtjobcatogoryName("IT ");
+        JobCatogoryPage.setTxtjobcatogoryName("IT");
         JobCatogoryPage.clickJobCatogorycancel();
         JobCatogoryPage.clickJobcatogoryAdd();
         JobCatogoryPage.setTxtjobcatogoryName("IT filed");
