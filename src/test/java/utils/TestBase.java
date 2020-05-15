@@ -42,16 +42,13 @@ public class TestBase {
         }
 
         LOGGER.info("Browser Initiated");
-<<<<<<< HEAD
-        LoginPage.setUserName("Admin");
-        LoginPage.setPass("admin123");
-        LoginPage.ClickLogin();
-=======
 
         LoginPage.setUserName("Admin");
         LoginPage.setPass("admin123");
         LoginPage.ClickLogin();
-<<<<<<< HEAD
+
+
+
         LOGGER.info("Hrm Login");
         HrmJob.clickAdminPanel();
         HrmJob.clickJobTab();
@@ -59,10 +56,9 @@ public class TestBase {
     @BeforeMethod(alwaysRun = true)
     public void Login() {
         softAssert = new SoftAssert();
-=======
 
->>>>>>> c5e26ea64a2a32573a80b8b84623be299b372777
->>>>>>> 0d035bc786d8f33a3d5a29f81eac5f6db57d4d41
+
+
     }
 
     //ajxhusduhdusssssssssssssssss
@@ -87,7 +83,7 @@ public class TestBase {
     public void closeBrowser()
     {
         LOGGER.info("Closing Browser");
-        PageBase.closeDriver();
+        //PageBase.closeDriver();
         LOGGER.info("Browser Closed");
     }
     //ajxhusduhdusssssssssssssssss
