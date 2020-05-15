@@ -49,9 +49,7 @@ public class TestBase {
 
 
 
-        LOGGER.info("Hrm Login");
-        HrmJob.clickAdminPanel();
-        HrmJob.clickJobTab();
+
     }
     @BeforeMethod(alwaysRun = true)
     public void Login() {
@@ -83,7 +81,7 @@ public class TestBase {
     public void closeBrowser()
     {
         LOGGER.info("Closing Browser");
-        //PageBase.closeDriver();
+        PageBase.closeDriver();
         LOGGER.info("Browser Closed");
     }
     //ajxhusduhdusssssssssssssssss
