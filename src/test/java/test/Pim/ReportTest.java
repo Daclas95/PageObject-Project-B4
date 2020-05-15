@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import utils.TestBase;
 
-public class PimTest extends TestBase {
+public class ReportTest extends TestBase {
     @Test
     public void PimTest(){
     
