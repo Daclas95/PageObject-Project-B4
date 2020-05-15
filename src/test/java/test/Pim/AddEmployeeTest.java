@@ -11,7 +11,7 @@ public class AddEmployeeTest extends TestBase{
 	    public void PimTest(){
 	    
 		   AddEmployeePage.Clickpim();
-		   AddEmployeePage.ClickAddEmployeePage();
+//		   AddEmployeePage.ClickAddEmployeePage();
 		   AddEmployeePage.setfirstname("Thusi");
 		   AddEmployeePage.setmiddlename("Kannan");
 		   AddEmployeePage.setlastname("Thusi");

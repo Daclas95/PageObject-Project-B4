@@ -1,11 +1,10 @@
 package utils;
 
-<<<<<<< HEAD
-=======
+
 import com.pages.admin.LoginPage;
 import com.pages.admin.HrmJob;
 
->>>>>>> 235f6f317ebf219305b0e71bffccd40f61ce3bb8
+
 import org.apache.log4j.Logger;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -13,7 +12,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.asserts.SoftAssert;
 
-import com.pages.LoginPage;
+
 
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
@@ -38,15 +37,13 @@ public class TestBase {
             e.printStackTrace();
         }
         LOGGER.info("Browser Initiated");
-<<<<<<< HEAD
-        LoginPage.setUserName("Admin");
-        LoginPage.setPass("admin123");
-        LoginPage.ClickLogin();
-=======
 
         LoginPage.setUserName("Admin");
         LoginPage.setPass("admin123");
         LoginPage.ClickLogin();
+
+
+
 
 
 
@@ -58,7 +55,7 @@ public class TestBase {
 
 
 
->>>>>>> 235f6f317ebf219305b0e71bffccd40f61ce3bb8
+
     }
     //ajxhusduhdusssssssssssssssss
     @BeforeMethod(alwaysRun = true)

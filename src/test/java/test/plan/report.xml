@@ -12,17 +12,17 @@
     <test name="Regression" >
         <classes>
 
-            <class name="test.LoginTest"></class>
-<<<<<<< HEAD
+<!--            <class name="test.LoginTest"></class>-->
+
             <class name="test.AdminTest.UserTest"></class>
 
-=======
-            <class name="test.AdminTest"></class>
+
+<!--        <class name="test.AdminTest"></class>-->
             <class name="test.plan.PayGradeTestPage"></class>
             <class name="test.plan.JobCatogoryTest"></class>
             <class name="test.plan.EmploymentStatusTest"></class>
             <class name="test.plan.WorkShiftTest"></class>
->>>>>>> 235f6f317ebf219305b0e71bffccd40f61ce3bb8
+
 
         </classes>
     </test>
