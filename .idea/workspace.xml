@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4f262b2-4902-406e-8262-309ada2801d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/test/plan/Nixsala.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/admin/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pages/admin/HrmJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pages/admin/HrmJob.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pages/admin/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pages/admin/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pim/ReportPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pim/ReportPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/PageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/PageBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/AdminTest/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/AdminTest/UserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/FactoryRunner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/PageLogin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/plan/JobCatogoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/plan/JobCatogoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +27,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
   </component>
   <component name="RunManager" selected="TestNG.G:/page/src/test/java/test/plan/Nixsala.xml">
     <configuration name="G:/page/src/test/java/test/plan/Nixsala.xml" type="TestNG" temporary="true" nameIsGenerated="true">
@@ -119,8 +111,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1589456830193</updated>
+      <workItem from="1589538823806" duration="1108000" />
+      <workItem from="1589540213573" duration="847000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="466" y="232" width="433" height="269" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1589535554053">
