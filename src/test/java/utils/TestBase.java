@@ -22,12 +22,16 @@ public class TestBase {
         System.out.println("Test Running " + this.getClass().toString());
     }
 
-//ajxhusduhdusssssssssssssssss
+
 
     @BeforeMethod(alwaysRun = true)
 
     public void loadBrowser() throws InterruptedException {
         LOGGER.info("Initiate Browser");
+       // LoginPage.implicitWait(20);
+        /*LoginPage.setUserName("Admin");
+        LoginPage.setPass("admin123");
+        LoginPage.ClickLogin();*/
 
         try
         {
@@ -40,20 +44,15 @@ public class TestBase {
         }
 
         LOGGER.info("Browser Initiated");
-<<<<<<< HEAD
-        LoginPage.setUserName("Admin");
+
+
+        /*LoginPage.setUserName("Admin");
         LoginPage.setPass("admin123");
-        LoginPage.ClickLogin();
-=======
+        LoginPage.ClickLogin();*/
 
-        LoginPage.setUserName("Admin");
-        LoginPage.setPass("admin123");
-        LoginPage.ClickLogin();
+   }
 
->>>>>>> c5e26ea64a2a32573a80b8b84623be299b372777
-    }
 
-    //ajxhusduhdusssssssssssssssss
 
     @BeforeMethod(alwaysRun = true)
     public void beforeMethod()
@@ -68,7 +67,7 @@ public class TestBase {
         LOGGER.info("Test name: " + method.getName());
     }
 
-    //ajxhusduhdusssssssssssssssss
+
 
     @AfterMethod(alwaysRun = true)
 
@@ -78,7 +77,7 @@ public class TestBase {
         PageBase.closeDriver();
         LOGGER.info("Browser Closed");
     }
-    //ajxhusduhdusssssssssssssssss
+
 
     @AfterMethod(alwaysRun = true)
 
