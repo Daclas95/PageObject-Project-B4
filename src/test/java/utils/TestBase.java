@@ -1,8 +1,6 @@
 package utils;
 
 
-import com.pages.admin.LoginPage;
-import com.pages.admin.HrmJob;
 
 
 import org.apache.log4j.Logger;
@@ -27,28 +25,39 @@ public class TestBase {
     public void beforeTest() {
         System.out.println("Test Running " + this.getClass().toString());
     }
-//ajxhusduhdusssssssssssssssss
+
+
+
+
     @BeforeMethod(alwaysRun = true)
     public void loadBrowser() {
         LOGGER.info("Initiate Browser");
-        try {
-            PageBase.initiateDriver();
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        }
-        LOGGER.info("Browser Initiated");
 
-        LoginPage.setUserName("Admin");
+
+            // LoginPage.implicitWait(20);
+        /*LoginPage.setUserName("Admin");
         LoginPage.setPass("admin123");
-        LoginPage.ClickLogin();
+        LoginPage.ClickLogin();*/
+
+            try {
+
+                PageBase.initiateDriver();
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            }
+            LOGGER.info("Browser Initiated");
 
 
-
-
-
+        /*LoginPage.setUserName("Admin");
+        LoginPage.setPass("admin123");
+        LoginPage.ClickLogin();*/
 
 
     }
+
+
+
+
     @BeforeMethod(alwaysRun = true)
     public void Login() {
         softAssert = new SoftAssert();
@@ -68,14 +77,14 @@ public class TestBase {
         LOGGER.info("Test name: " + method.getName());
     }
 
-    //ajxhusduhdusssssssssssssssss
     @AfterMethod(alwaysRun = true)
     public void closeBrowser() {
         LOGGER.info("Closing Browser");
        PageBase.closeDriver();
         LOGGER.info("Browser Closed");
     }
-    //ajxhusduhdusssssssssssssssss
+
+
     @AfterMethod(alwaysRun = true)
     public void afterMethod(Method method, ITestResult result) {
         LOGGER.info("Executed test case name:" + method.getName() + " Execution Results : " + result.toString());
