@@ -15,8 +15,13 @@ public class EmploymentStatus extends PageBase {
     private static By CheckEmploymentsatus = By.id("ohrmList_chkSelectRecord_8");
     private static By Butempstatusdelete = By.id("btnDelete");
     private static By ConfirmDelete = By.id("dialogDeleteBtn");
+    private static By EmploymentStatusHr = By.xpath("//*[@id=\"search-results\"]/div[1]/h1");
 
 
+    public static boolean isHrmEmployeeStatusDisplayed() {
+        return getDriver().findElement(EmploymentStatusHr).isDisplayed();
+
+    }
 
     public static void clickMenuempstatus() {
         getDriver().findElement(Menuemploymentstatus).click();

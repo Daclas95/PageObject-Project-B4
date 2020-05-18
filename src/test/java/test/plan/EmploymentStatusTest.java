@@ -5,6 +5,7 @@ import com.pages.admin.EmploymentStatus;
 import com.pages.admin.PayGrade;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+import utils.PageBase;
 import utils.TestBase;
 
 public class EmploymentStatusTest  extends TestBase {
@@ -12,9 +13,9 @@ public class EmploymentStatusTest  extends TestBase {
     public void employeeTest() {
         softAssert = new SoftAssert();
         softAssert.assertTrue(DashboardPage.isHrmDashboardPageDisplayed(), "Hrm Dashboard Page Not Display");
-        softAssert.assertAll();
-
         EmploymentStatus.clickMenuempstatus();
+        PageBase.implicitWait(3);
+//        softAssert.assertTrue(EmploymentStatus.isHrmEmployeeStatusDisplayed(),"Not show This Page Not Display");
         EmploymentStatus.clickempstatusadd();
         EmploymentStatus.setEmpstatusNmae("Abimaaran");
         EmploymentStatus.clickEmpstatuscancel();
@@ -24,7 +25,7 @@ public class EmploymentStatusTest  extends TestBase {
         EmploymentStatus.clickEmpstatuscheck();
         EmploymentStatus.clickEmpstatusdelete();
         EmploymentStatus.clickEmpstatusconfirmdelete();
-
+       softAssert.assertAll();
 
 
 

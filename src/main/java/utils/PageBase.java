@@ -25,7 +25,7 @@ public class PageBase {
 
     private static String baseUrl = "https://opensource-demo.orangehrmlive.com/";
     private static String webDriverLocation = "src"+ File.separator+"test"+File.separator+"resources"+File.separator+"drivers"+File.separator;
-    protected static String osType = System.getProperty("os.type", Constants.WINDOWS);
+    protected static String osType = System.getProperty("os.type", Constants.UBUNTU);
     protected static String driverType = System.getProperty("browser.type", Constants.CHROME);
 
     /**

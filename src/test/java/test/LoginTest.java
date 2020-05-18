@@ -9,20 +9,22 @@ import org.testng.asserts.SoftAssert;
 
 import com.pages.admin.HrmJob;
 import com.pages.admin.LoginPage;
-import org.testng.annotations.Test;
+
+
 
 
 import utils.TestBase;
 
+
 public class LoginTest extends TestBase {
 
 
-    @Test(priority = 1)
-    public void LoginTest() {
+    @Test(priority = 1,groups = "REGRESSION",dataProviderClass = LoginData.class, dataProvider = "LoginTestData", testName = "LoginCorrect")
+    public void LoginTest(String username,String Password) {
         softAssert = new SoftAssert();
-        softAssert.assertTrue(LoginPage.isHrmLoginPageDisplayed(), "HrmLogin Page Not Display");
-        LoginPage.setUserName("Admin");
-        LoginPage.setPass("admin123");
+        softAssert.assertTrue(LoginPage.isHrmLoginPageDisplayed(), "Hrm Login Page Not Display");
+        LoginPage.setUserName(username);
+        LoginPage.setPass(Password);
         LoginPage.ClickLogin();
         softAssert.assertTrue(DashboardPage.isHrmDashboardPageDisplayed(), "Hrm Dashboard Page Not Display");
         softAssert.assertAll();

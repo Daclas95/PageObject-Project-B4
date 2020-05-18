@@ -6,21 +6,20 @@ import utils.PageBase;
 
 public class LoginPage extends PageBase {
 
-        private static final Logger LOGGER = Logger.getLogger(String.valueOf(LoginPage.class));
+
+    private static final Logger LOGGER = Logger.getLogger(LoginPage.class);
         private static By TxtUsername= By.id("txtUsername");
         private static By TxtPassworld= By.id("txtPassword");
         private static By btnLogin= By.id("btnLogin");
-        private static By HrmHeader =By.id("logInPanelHeading");
+        private static By HrmLoginHeader =By.id("logInPanelHeading");
         private static By clickwelcom =By.id("welcome");
         private static By logout =By.xpath("//a[@href=\"/index.php/auth/logout\"]");
 
 
 
-        public static void waittime(){
-            waiTillClickable(logout,3);
-        }
+
         public static boolean isHrmLoginPageDisplayed() {
-            return getDriver().findElement(HrmHeader).isDisplayed();
+            return getDriver().findElement(HrmLoginHeader).isDisplayed();
 
         }
         public static void setUserName(String username) {

@@ -3,6 +3,7 @@ package utils;
 
 
 
+import com.pages.LoginPage;
 import org.apache.log4j.Logger;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -48,9 +49,9 @@ public class TestBase {
             LOGGER.info("Browser Initiated");
 
 
-        /*LoginPage.setUserName("Admin");
-        LoginPage.setPass("admin123");
-        LoginPage.ClickLogin();*/
+//        LoginPage.setUserName("Admin");
+//        LoginPage.setPass("admin123");
+//        LoginPage.ClickLogin();
 
 
     }
