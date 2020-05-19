@@ -1,7 +1,4 @@
-package test.PIM;
-
-
-
+package test.plan;
 
 import org.testng.annotations.Test;
 
