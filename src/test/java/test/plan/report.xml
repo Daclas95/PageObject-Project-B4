@@ -23,7 +23,6 @@
             <class name="test.plan.EmploymentStatusTest"></class>
             <class name="test.plan.WorkShiftTest"></class>
 
-
         </classes>
     </test>
 
