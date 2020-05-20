@@ -1,4 +1,4 @@
-package test.PIM;
+package test.Pim;
 
 import org.testng.annotations.Test;
 import com.pim.AddEmployeePage;
