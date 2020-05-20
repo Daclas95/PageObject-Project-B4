@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="748ba683-4822-4cdd-82a4-2105ac99fb41" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/drivers/chromedriver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utils/PageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/PageBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/Pim/AddEmployeeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/Pim/AddEmployeeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/Pim/ReportTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/PIM/ReportTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/PIM/ReportTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/PIM/ReportTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/ExtentReportListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/ExtentReportListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,32 +35,34 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/drivers" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="test" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/test/resources/ExcelSheet" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="utils" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/resources/ExcelSheet" />
       <recent name="$PROJECT_DIR$/src/test/java/test" />
       <recent name="$PROJECT_DIR$/src/test" />
       <recent name="$PROJECT_DIR$/src/test/java" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/drivers" />
+      <recent name="$PROJECT_DIR$/src/test/resources/ExcelSheet" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="utils" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="test" />
+    </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTest.LoginTest (1)">
+  <component name="RunManager" selected="TestNG.ReportTest">
     <configuration name="AddEmployeeTest.PimTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PageObject-Project-B4" />
       <extension name="coverage">
@@ -108,28 +116,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="PageobjectFramework" />
+    <configuration name="ReportTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PageObject-Project-B4" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="test.PIM.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.LoginTest" />
-      <option name="METHOD_NAME" value="LoginTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PACKAGE_NAME" value="test.PIM" />
+      <option name="MAIN_CLASS_NAME" value="test.PIM.ReportTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="/home/theva/Documents/SGIC-B4-training/Hrm-B4/PageObject-Project-B4/src/test/resources/test/plan/report.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="PageobjectFramework" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/test/plan/report.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
+    <configuration name="ReportTest.PimTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PageObject-Project-B4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.PIM.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.PIM" />
+      <option name="MAIN_CLASS_NAME" value="test.PIM.ReportTest" />
+      <option name="METHOD_NAME" value="PimTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -138,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ReportTest" />
+        <item itemvalue="TestNG.ReportTest.PimTest" />
+        <item itemvalue="TestNG.LoginTest (1)" />
         <item itemvalue="TestNG.LoginTest.LoginTest (1)" />
         <item itemvalue="TestNG.AddEmployeeTest.PimTest" />
-        <item itemvalue="TestNG.LoginTest (1)" />
-        <item itemvalue="TestNG./home/theva/Documents/SGIC-B4-training/Hrm-B4/PageObject-Project-B4/src/test/resources/test/plan/report.xml" />
-        <item itemvalue="TestNG.LoginTest.LoginTest" />
       </list>
     </recent_temporary>
   </component>
@@ -181,26 +196,26 @@
     </state>
     <state x="2471" y="242" width="374" height="414" key="FileChooserDialogImpl/67.27.1853.1053/1920.0.1440.900@1920.0.1440.900" timestamp="1589778017683" />
     <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053/1920.0.1440.900@67.27.1853.1053" timestamp="1589949272877" />
-    <state width="1807" height="2" key="GridCell.Tab.0.bottom" timestamp="1589959842040">
+    <state width="1807" height="2" key="GridCell.Tab.0.bottom" timestamp="1589960751968">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1394" height="339" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1440.900@1920.0.1440.900" timestamp="1589818085256" />
-    <state width="1807" height="2" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1440.900@67.27.1853.1053" timestamp="1589959842040" />
-    <state width="1807" height="2" key="GridCell.Tab.0.center" timestamp="1589959842040">
+    <state width="1807" height="2" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1440.900@67.27.1853.1053" timestamp="1589960751968" />
+    <state width="1807" height="2" key="GridCell.Tab.0.center" timestamp="1589960751967">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1394" height="339" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1440.900@1920.0.1440.900" timestamp="1589818085255" />
-    <state width="1807" height="2" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1440.900@67.27.1853.1053" timestamp="1589959842040" />
-    <state width="1807" height="2" key="GridCell.Tab.0.left" timestamp="1589959842040">
+    <state width="1807" height="2" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1440.900@67.27.1853.1053" timestamp="1589960751967" />
+    <state width="1807" height="2" key="GridCell.Tab.0.left" timestamp="1589960751967">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1394" height="339" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1440.900@1920.0.1440.900" timestamp="1589818085255" />
-    <state width="1807" height="2" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1440.900@67.27.1853.1053" timestamp="1589959842040" />
-    <state width="1807" height="2" key="GridCell.Tab.0.right" timestamp="1589959842040">
+    <state width="1807" height="2" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1440.900@67.27.1853.1053" timestamp="1589960751967" />
+    <state width="1807" height="2" key="GridCell.Tab.0.right" timestamp="1589960751967">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1394" height="339" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1440.900@1920.0.1440.900" timestamp="1589818085255" />
-    <state width="1807" height="2" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1440.900@67.27.1853.1053" timestamp="1589959842040" />
+    <state width="1807" height="2" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1440.900@67.27.1853.1053" timestamp="1589960751967" />
     <state width="1807" height="728" key="GridCell.Tab.1.bottom" timestamp="1589727666185">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>

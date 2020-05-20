@@ -26,23 +26,18 @@ public class TestBase {
     public void beforeTest() {
         System.out.println("Test Running " + this.getClass().toString());
     }
-<<<<<<< HEAD
 
 
 
 
-=======
-    //ajxhusduhdusssssssssssssssss
->>>>>>> 2218464b163878f65cb71235f0c097cb82fcb88b
+
+
     @BeforeMethod(alwaysRun = true)
     public void loadBrowser() {
         LOGGER.info("Initiate Browser");
 
 
-            // LoginPage.implicitWait(20);
-        /*LoginPage.setUserName("Admin");
-        LoginPage.setPass("admin123");
-        LoginPage.ClickLogin();*/
+
 
             try {
 
@@ -53,9 +48,9 @@ public class TestBase {
             LOGGER.info("Browser Initiated");
 
 
-//        LoginPage.setUserName("Admin");
-//        LoginPage.setPass("admin123");
-//        LoginPage.ClickLogin();
+        LoginPage.setUserName("Admin");
+        LoginPage.setPass("admin123");
+        LoginPage.ClickLogin();
 
 
     }
@@ -84,24 +79,20 @@ public class TestBase {
 
     @AfterMethod(alwaysRun = true)
     public void closeBrowser() {
-        LOGGER.info("Closing Browser");
-       PageBase.closeDriver();
-        LOGGER.info("Browser Closed");
-    }
 
-<<<<<<< HEAD
-
-=======
         LoginPage.Clickwelcome();
         LoginPage.waittime();
-        LoginPage.ClickLogout();
+//        LoginPage.ClickLogout();
 
         LOGGER.info("Closing Browser");
         PageBase.closeDriver();
         LOGGER.info("Browser Closed");
     }
+
+
+
     //ajxhusduhdusssssssssssssssss
->>>>>>> 2218464b163878f65cb71235f0c097cb82fcb88b
+
     @AfterMethod(alwaysRun = true)
     public void afterMethod(Method method, ITestResult result) {
         LOGGER.info("Executed test case name:" + method.getName() + " Execution Results : " + result.toString());

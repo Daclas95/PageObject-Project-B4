@@ -2,7 +2,7 @@ package test.PIM;
 
 import com.pim.ReportPage;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
+
 import utils.TestBase;
 
 public class ReportTest extends TestBase {
