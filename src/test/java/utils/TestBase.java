@@ -13,7 +13,7 @@ import java.net.MalformedURLException;
 
 public class TestBase {
     public SoftAssert softAssert;
-    
+
 
     private static final Logger LOGGER = Logger.getLogger(TestBase.class);
 
@@ -21,7 +21,7 @@ public class TestBase {
     public void beforeTest() {
         System.out.println("Test Running " + this.getClass().toString());
     }
-//ajxhusduhdusssssssssssssssss
+    //ajxhusduhdusssssssssssssssss
     @BeforeMethod(alwaysRun = true)
     public void loadBrowser() {
         LOGGER.info("Initiate Browser");
@@ -57,14 +57,15 @@ public class TestBase {
     @AfterMethod(alwaysRun = true)
     public void closeBrowser() {
 
-      //  LoginPage.Clickwelcom();
-        //LoginPage.waittime();
-       // LoginPage.ClickLogout();
+        LoginPage.Clickwelcome();
+        LoginPage.waittime();
+        LoginPage.ClickLogout();
 
-        //LOGGER.info("Closing Browser");
-        //PageBase.closeDriver();
-       // LOGGER.info("Browser Closed");
+        LOGGER.info("Closing Browser");
+        PageBase.closeDriver();
+        LOGGER.info("Browser Closed");
     }
+    //ajxhusduhdusssssssssssssssss
     @AfterMethod(alwaysRun = true)
     public void afterMethod(Method method, ITestResult result) {
         LOGGER.info("Executed test case name:" + method.getName() + " Execution Results : " + result.toString());

@@ -12,21 +12,21 @@ public class LoginPage extends PageBase {
     private static By TxtPassworld= By.id("txtPassword");
     private static By btnLogin= By.id("btnLogin");
     private static By HrmHeader =By.id("logInPanelHeading");
-    private static By clickwelcom =By.id("welcome");
+    private static By clickwelcome =By.id("welcome");
     private static By logout =By.xpath("//a[@href=\"/index.php/auth/logout\"]");
 
 
 
-   public static void waittime(){
-       waiTillClickable(logout,3);
-   }
+    public static void waittime(){
+        waiTillClickable(logout,3);
+    }
     public static boolean isHrmLoginPageDisplayed() {
         return getDriver().findElement(HrmHeader).isDisplayed();
 
     }
     public static void setUserName(String username) {
-       getDriver().findElement(TxtUsername).sendKeys(username);
-       LOGGER.info("Entered Username");
+        getDriver().findElement(TxtUsername).sendKeys(username);
+        LOGGER.info("Entered Username");
 
 
     }
@@ -46,8 +46,8 @@ public class LoginPage extends PageBase {
         LOGGER.info("Clicked Logout");
 
     }
-    public static void Clickwelcom() {
-        getDriver().findElement(clickwelcom).click();
+    public static void Clickwelcome() {
+        getDriver().findElement(clickwelcome).click();
         LOGGER.info("Clicked Welcome");
 
     }
